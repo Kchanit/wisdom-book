@@ -15,11 +15,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.server.LocalServerPort;
 
-
 import java.time.Duration;
 
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
+// Chanitaphon Lohamongkol 6410406533
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class AddBookTests {
@@ -57,12 +57,12 @@ public class AddBookTests {
 
     @Test
     void testAddBook() {
-//        WebElement nameField = wait.until(webDriver ->
-//                webDriver.findElement(By.id("nameInput")));
-//        WebElement authorField = driver.findElement(By.id("authorInput"));
-//        WebElement priceField = driver.findElement(By.id("priceInput"));
-//
-//        WebElement submitButton = driver.findElement(By.id("submitButton"));
+        // WebElement nameField = wait.until(webDriver ->
+        // webDriver.findElement(By.id("nameInput")));
+        // WebElement authorField = driver.findElement(By.id("authorInput"));
+        // WebElement priceField = driver.findElement(By.id("priceInput"));
+        //
+        // WebElement submitButton = driver.findElement(By.id("submitButton"));
 
         nameField.sendKeys("Clean Code");
         authorField.sendKeys("Robert Martin");
@@ -93,4 +93,3 @@ public class AddBookTests {
             driver.quit();
     }
 }
-
